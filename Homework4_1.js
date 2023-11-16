@@ -6,8 +6,14 @@ function is_NaN(value){
         return false;
     }
 }
+let num1 = is_NaN(54);
+console.log(num1);
 
-console.log(is_NaN(54));
-console.log(is_NaN(NaN));
-console.log(is_NaN("wow"));
-console.log(is_NaN("54"));
+let num2 = is_NaN(NaN)
+console.log(num2);
+
+let num3 = is_NaN("wow, it's working")
+console.log(num3);
+
+let num4 = is_NaN("54")
+console.log(num4);
