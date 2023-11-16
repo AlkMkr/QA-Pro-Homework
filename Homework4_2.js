@@ -1,8 +1,8 @@
 function pad(strings, symb, num, side) {
   let atach = ""; // attaching string
-  let corr = num - strings.length; // how much we need to attach
+  let corr = num - strings.length; // calculate the difference between string length and the required number of symbols to
   if (corr >= 0) {
-    // if there's more than 0 space
+    // if difference is more than 0 then proceed
     for (let i = 1; i <= corr; i++) {
       // counting symbols
       atach += symb; //adding symbols to attachment string
@@ -17,7 +17,7 @@ function pad(strings, symb, num, side) {
       return strings;
     }
   } else {
-    // if corr is less than 0 then just return original string
+    // if differrence between string length and required number is less than 0 then just return original string
     return strings;
   }
 }
