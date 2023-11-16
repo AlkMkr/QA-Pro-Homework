@@ -8,17 +8,21 @@ function pad(strings, symb, num, side) {
       atach += symb; //adding symbols to attachment string
     }
     if (side) {
-      //if true
+      //if true attach symbols in front of string
       atach += strings;
       return atach;
     } else {
+      // if false attach symbols at the back of the string
       strings += atach;
       return strings;
     }
   } else {
+    // if corr is less than 0 then just return original string
     return strings;
   }
 }
-let letters = "12345";
-const padding = pad(letters, "*", 7, 0);
+let letters = "qwerty";
+const padding = pad(letters, "*", 12, 0);
+const padding1 = pad(letters, "*", 12, 1);
 console.log(padding);
+console.log(padding1);
