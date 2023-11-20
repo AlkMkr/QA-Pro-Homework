@@ -15,7 +15,7 @@ var services = {
     console.log(sum);
   },
   minPrice: function() {
-    let min = Infinity; // I kinda need this
+    let min = Infinity;
     for (let key in this) {
       let num = parseFloat(this[key]);
       if (num < min) {
