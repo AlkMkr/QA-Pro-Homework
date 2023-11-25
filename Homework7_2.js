@@ -17,7 +17,7 @@ var arr = [
 ];
 
 function filterEmail(arr) {
-  let reg = /^[^\s@]+@(gmail|yahoo)\.com$/i;
+  let reg = /^[^\s@]+@(gmail|yahoo)\.com$/i; // the expression validates the @ placement
   let filter = [];
   for (let obj = 0; obj < arr.length; obj++) {
     let check = arr[obj];
